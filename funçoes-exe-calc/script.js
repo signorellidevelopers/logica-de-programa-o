@@ -1,23 +1,32 @@
-function criar(){
-let tb = prompt('Digite o número da tabuada que vc quer saber');
-    tb = Number(tb);
-    let i = 1;
-    // while(i<= 10){
-    //     msg += tb + 'x' + i + ' = ' + (tb*i) + '<br>';
-    //     i++;
-    //     output.innerHTML = msg;
-    // }
-    for(i == 0; i<=10; i++){
-        
-    msg += tb + 'x' + i + ' = ' + (tb*i) + '<br>';
-    i++;
-    output.innerHTML = msg;
+let n1 = prompt('digite um número');
+n1 = Number(n1);
+escreve();
+function escreve(){
+    let output = document.querySelector('#output');
+    output.innerHTML = n1;
+}
+ function mais(){
+ let n = prompt('Digite outro número');
+ n = Number(n);
+ n1 = n1 + n;
+ escreve();
+ }
+ function menos(){
+    let n = prompt('Digite outro número');
+    n = Number(n);
+    n1 = n1 - n;
+    escreve();
     }
-    
-}
-function limpar(){
-     msg ='';
-     output.innerHTML = msg;
-}
-let output = document.querySelector('#output');
-let msg ='';
+    function mult(){
+        let n = prompt('Digite outro número');
+        n = Number(n);
+       // n1 = n1 * n;
+       n1 *= n;
+        escreve();
+        }
+        function dividir(){
+            let n = prompt('Digite outro número');
+            n = Number(n);
+            n1 = n1 / n;
+            escreve();
+            }
